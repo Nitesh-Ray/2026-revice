@@ -1,6 +1,12 @@
 import Mycard from './Mycard';
+import Button from './Button';
+import TodoList from './TodoList';
+import ProductList from './ProductList';
 
 function App() {
+
+      const handleClick = () => alert('Button clicked!');
+
   return (
     <div className="app">
       <h1>User Profiles</h1>
@@ -18,6 +24,19 @@ function App() {
           skills={['Node.js', 'Python', 'MongoDB']}
         />
       </div>
+
+      <div>
+      <Button text="Primary" color="blue" onClick={handleClick} />
+      <Button text="Danger" color="red" onClick={() => alert('Deleted!')} />
+      <Button text="Success" color="green" onClick={() => console.log('Saved!')} />
+      </div>
+      
+
+      <h1>rendering list--------------------------------------</h1>
+        <TodoList />
+
+        <ProductList />
+
     </div>
   );
 }
