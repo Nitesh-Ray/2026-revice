@@ -1,44 +1,59 @@
-import Mycard from './Mycard';
-import Button from './Button';
-import TodoList from './TodoList';
-import ProductList from './ProductList';
+import ProfileCard from "./ProfileCard";
+import Button from "./Button";
+import TodoList from "./TodoList";
+import ProductList from "./ProductList";
+import UserDashboard from "./UserDashboard";
+import CommentList from './CommentList';
 
 function App() {
-
-      const handleClick = () => alert('Button clicked!');
-
+  const handleClick = () => alert("Button clicked!");
+  const exampleComments = [{ id:1, author:'nit', text:'hello, i like it', likes:5 }];
   return (
     <div className="app">
-      <h1>User Profiles</h1>
+      <h1>User Profiles------------------------------</h1>
       <div className="card-container">
-        <Mycard 
+        <ProfileCard
           name="Jane Doe"
           avatar="https://i.pravatar.cc/150?img=5"
           bio="Frontend developer who loves React."
-          skills={['React', 'JavaScript', 'CSS']}
+          skills={["React", "JavaScript", "CSS"]}
         />
-        <Mycard 
+        <ProfileCard
           name="John Smith"
           avatar="https://i.pravatar.cc/150?img=8"
           bio="Backend developer exploring frontend."
-          skills={['Node.js', 'Python', 'MongoDB']}
+          skills={["Node.js", "Python", "MongoDB"]}
         />
       </div>
 
+      <h1>button + card inside it-------------------------------------</h1>
+
       <div>
-      <Button text="Primary" color="blue" onClick={handleClick} />
-      <Button text="Danger" color="red" onClick={() => alert('Deleted!')} />
-      <Button text="Success" color="green" onClick={() => console.log('Saved!')} />
+        <Button text="Primary" color="blue" onClick={handleClick} />
+        <Button text="Danger" color="red" onClick={() => alert("Deleted!")} />
+        <Button
+          text="Success"
+          color="green"
+          onClick={() => console.log("Saved!")}
+        />
       </div>
-      
 
       <h1>rendering list--------------------------------------</h1>
-        <TodoList />
+      <TodoList />
 
-        <ProductList />
+      <h1>ProductList--------------------------------------</h1>
 
+      <ProductList />
+
+      <h1>UserDashboard--------------------------------------</h1>
+
+      <UserDashboard />
+
+      <h1>comments------------------------------------------</h1>
+
+      <CommentList comments={exampleComments}/>
     </div>
   );
 }
 
-export default App
+export default App;

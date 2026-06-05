@@ -1,6 +1,6 @@
 // After (dynamic with props):
 
-function Mycard({ name, avatar, bio, skills }) {
+function ProfileCard({ name, avatar, bio, skills }) {
   return (
     <div className="card">
       <img src={avatar} alt={name} />
@@ -15,5 +15,4 @@ function Mycard({ name, avatar, bio, skills }) {
 }
 
 
-
-export default Mycard
+export default ProfileCard
