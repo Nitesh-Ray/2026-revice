@@ -1,4 +1,5 @@
 import CounterReducer from "./CounterReducer";
+import ShoppingCart from "./ShoppingCart";
 import TodoReducer from "./TodoReducer";
 
 
@@ -9,6 +10,8 @@ function App() {
     <CounterReducer />
 
     <TodoReducer />
+
+    <ShoppingCart />
     </div>
   );
 }
