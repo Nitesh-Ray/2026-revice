@@ -5,7 +5,7 @@ function Footer() {
   const { theme } = useTheme();
   return (
     <footer style={{ marginTop: 20, fontStyle: 'italic' }}>
-      <p>Footer----- – theme: {theme}</p>
+      <p>Footer is also----- – theme: {theme}</p>
     </footer>
   );
 }

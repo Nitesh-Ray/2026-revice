@@ -6,7 +6,7 @@ function ThemeSwitcher() {
   const appStyle = {
     backgroundColor: theme === 'light' ? '#fff' : '#222',
     color: theme === 'light' ? '#000' : '#fff',
-    minHeight: '100vh',
+    minHeight: '50vh',
     padding: '20px',
     transition: 'all 0.3s',
   };
