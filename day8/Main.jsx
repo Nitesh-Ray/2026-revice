@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import {ThemeProvider} from "./context/ThemeContext.jsx";
 import { LanguageProvider } from './context/LanguageContext';
 import { AuthProvider } from "./context/AuthContext.jsx";
+import { NotificationProvider } from "./context/NotificationContext.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -12,8 +13,10 @@ createRoot(document.getElementById("root")).render(
     <ThemeProvider>
       <LanguageProvider>
         <AuthProvider>
-          <h1>Day 8 – Context API & useContext </h1>
-          <App />
+          <NotificationProvider>
+            <h1>Day 8 – Context API & useContext </h1>
+            <App />
+          </NotificationProvider>
         </AuthProvider>
       </LanguageProvider>
     </ThemeProvider>
