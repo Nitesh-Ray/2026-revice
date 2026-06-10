@@ -83,7 +83,11 @@ function RandomUser() {
           <p>
             📍 {user.location.city}, {user.location.country}
           </p>
-          <p>Fetched {secondsSinceFetch}s ago</p>
+
+
+          <p>Fetched 2nd {secondsSinceFetch}s ago</p>
+
+
           {fetchTime && <small>Fetched at {fetchTime}</small>}
         </div>
       )}
