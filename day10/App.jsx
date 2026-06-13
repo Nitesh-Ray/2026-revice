@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Layout from "./Layout";
 import Product from "./pages/Product";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       </Routes>
 
       <Blog />
+
+      <BlogPost />
     </div>
   );
 }
