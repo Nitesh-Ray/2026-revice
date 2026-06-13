@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Layout from "./Layout";
 import Product from "./pages/Product";
+import Blog from "./pages/Blog";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/product/:id" element={<Product />} />
         </Route>
       </Routes>
+
+      <Blog />
     </div>
   );
 }
