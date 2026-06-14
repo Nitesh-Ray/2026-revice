@@ -24,6 +24,30 @@ function Navbar() {
       >
         Contact
       </NavLink>
+      <NavLink
+        to="/product"
+        style={({ isActive }) => (isActive ? activeStyle : {})}
+      >
+        Product
+      </NavLink>
+      <NavLink
+        to="/blog"
+        style={({ isActive }) => (isActive ? activeStyle : {})}
+      >
+        Blog
+      </NavLink>
+      <NavLink
+        to="/blogpost"
+        style={({ isActive }) => (isActive ? activeStyle : {})}
+      >
+        Blog Post
+      </NavLink>
+      <NavLink
+        to="/products"
+        style={({ isActive }) => (isActive ? activeStyle : {})}
+      >
+        products
+      </NavLink>
     </nav>
   );
 }

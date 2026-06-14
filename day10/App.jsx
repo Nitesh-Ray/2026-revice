@@ -7,7 +7,9 @@ import Layout from "./Layout";
 import Product from "./pages/Product";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-
+import NotFound from "./NotFound";
+import Products from "./Products";
+import ProductDetail from "./ProductDetail";
 
 function App() {
   return (
@@ -20,12 +22,19 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product/:id" element={<Product />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:postId" element={<BlogPost />} />
+          <Route path="*" element={<NotFound />} /> {/* catch-all */}
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:productId" element={<ProductDetail />} />
+
         </Route>
       </Routes>
+      {/* <Products />
 
-      <Blog />
+      {/* <Blog />
 
-      <BlogPost />
+      <BlogPost /> */}
     </div>
   );
 }
