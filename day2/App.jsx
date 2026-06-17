@@ -51,7 +51,7 @@ function App() {
 
       <h1>comments------------------------------------------</h1>
 
-      <CommentList comments={exampleComments}/>
+      <  comments={exampleComments}/>
     </div>
   );
 }

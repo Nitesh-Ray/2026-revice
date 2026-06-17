@@ -29,7 +29,7 @@ function UserDashboard() {
     <div>
       <h1>Team Dashboard</h1>
       <p>Total members: {users.length}</p>
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+      <div style={{display: "flex", gap: "20px", flexWrap: "wrap"}}>
         {users.map((user) => (
           <ProfileCard
             key={user.id}
@@ -41,7 +41,7 @@ function UserDashboard() {
         ))}
         // Inside UserDashboard, below the cards:
         <div
-          style={{ marginTop: "30px", padding: "20px", background: "#f0f0f0" }}
+          style={{marginTop: "30px", padding: "20px", background: "#f0f0f0"}}
         >
           <h3>Team Stats</h3>
           <p>

@@ -14,5 +14,4 @@ function ProfileCard({ name, avatar, bio, skills }) {
   );
 }
 
-
-export default ProfileCard
+export default ProfileCard;
