@@ -1,6 +1,9 @@
 import UserList from "./components/UserList.jsx";
 import {useToggle} from "./hooks/useToggle";
 import {useLocalStorage} from "./hooks/useLocalStorage.js";
+import SearchInput from "./components/SearchInput.jsx";
+import SearchBox from "./components/SearchBox.jsx";
+import PreviousDemo from "./components/PreviousDemo.jsx";
 
 function App() {
   const [isVisible, toggleVisibility] = useToggle(true);
@@ -17,7 +20,6 @@ function App() {
         </button>
         {isVisible && <p>This content is visible.</p>}
       </div>
-
 
       <div
         style={{
@@ -54,6 +56,16 @@ function App() {
 
         <UserList />
       </div>
+
+      <div>
+        <SearchInput />
+        <UserList />
+        ...
+      </div>
+
+      <SearchBox />
+
+      <PreviousDemo />?
     </div>
   );
 }
