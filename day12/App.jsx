@@ -1,3 +1,4 @@
+import ShoppingCart from "./components/ShoppingCart";
 import ZustandCounter from "./components/ZustandCounter";
 import ZustandTodo from "./components/ZustandTodo";
 
@@ -10,6 +11,8 @@ function App() {
       <ZustandCounter />
 
       <ZustandTodo />
+
+      <ShoppingCart />
     </div>
   );
 }
