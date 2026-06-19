@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1></h1>
+    <h1>Day 12 – Zustand (Simple Global State, No Provider) </h1>
     <App />
   </StrictMode>,
 )
