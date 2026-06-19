@@ -1,4 +1,5 @@
 import ShoppingCart from "./components/ShoppingCart";
+import ThemeWrapper from "./components/ThemeWrapper";
 import ZustandCounter from "./components/ZustandCounter";
 import ZustandTodo from "./components/ZustandTodo";
 
@@ -13,6 +14,8 @@ function App() {
       <ZustandTodo />
 
       <ShoppingCart />
+
+      <ThemeWrapper />
     </div>
   );
 }
