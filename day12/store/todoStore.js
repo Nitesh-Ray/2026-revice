@@ -1,27 +1,44 @@
-import {create} from "zustand";
+// import {create} from "zustand";
 
-export const useTodoStore = create((set) => ({
-  todos: [],
+// export const useTodoStore = create((set) => ({
+//   todos: [],
 
-  addTodo: (text) =>
-    set((state) => ({
-      todos: [...state.todos, {id: Date.now(), text, completed: false}],
-    })),
+//   addTodo: (text) =>
+//     set((state) => ({
+//       todos: [...state.todos, {id: Date.now(), text, completed: false}],
+//     })),
 
-  toggleTodo: (id) =>
-    set((state) => ({
-      todos: state.todos.map((todo) =>
-        todo.id === id ? {...todo, completed: !todo.completed} : todo,
-      ),
-    })),
+//   toggleTodo: (id) =>
+//     set((state) => ({
+//       todos: state.todos.map((todo) =>
+//         todo.id === id ? {...todo, completed: !todo.completed} : todo,
+//       ),
+//     })),
 
-  deleteTodo: (id) =>
-    set((state) => ({
-      todos: state.todos.filter((todo) => todo.id !== id),
-    })),
+//   deleteTodo: (id) =>
+//     set((state) => ({
+//       todos: state.todos.filter((todo) => todo.id !== id),
+//     })),
 
-  clearCompleted: () =>
-    set((state) => ({
-      todos: state.todos.filter((todo) => !todo.completed),
-    })),
-}));
+//   clearCompleted: () =>
+//     set((state) => ({
+//       todos: state.todos.filter((todo) => !todo.completed),
+//     })),
+// }));
+
+
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+
+export const useTodoStore = create(
+  persist(
+    (set) => ({
+      todos: [],
+      addTodo: (text) => { /* ... */ },
+      toggleTodo: (id) => { /* ... */ },
+      deleteTodo: (id) => { /* ... */ },
+      clearCompleted: () => { /* ... */ },
+    }),
+    { name: 'todo-storage' }
+  )
+);
