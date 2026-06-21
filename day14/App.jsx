@@ -1,10 +1,11 @@
+import LoginFormRHF from "./components/LoginFormRHF";
 
 
 
 function App() {
   return (
     <div>
-    
+    <LoginFormRHF />
     </div>
   );
 }

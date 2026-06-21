@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1></h1>
+    <h1>Day 14 – React Hook Form + Zod Validation</h1>
     <App />
   </StrictMode>,
 )
