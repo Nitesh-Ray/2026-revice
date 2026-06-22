@@ -30,6 +30,7 @@ function PerformanceDemo() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <SlowChild name="Alice" count={count} />
         <SlowChild name="Bob" count={100} />  {/* props never change */}
+        <SlowChild name="Bob" count={100} onDelete={() => console.log('Delete Bob')} />
       </div>
     </div>
   );
