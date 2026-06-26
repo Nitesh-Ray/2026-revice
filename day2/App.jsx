@@ -51,7 +51,7 @@ function App() {
 
       <h1>comments------------------------------------------</h1>
 
-      <  comments={exampleComments}/>
+      {/* <  comments={exampleComments}/>  */}
     </div>
   );
 }

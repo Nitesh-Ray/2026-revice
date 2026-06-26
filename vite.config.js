@@ -10,4 +10,10 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(), // ← add this
   ],
+  test: {
+    globals: true,             // so we don't need to import `describe`, `it`, `expect`
+    environment: 'jsdom',      // simulates a browser
+    setupFiles: './src/test/setup.js',  // runs before each test file
+    css: true,                 // optional: handle CSS imports
+  },
 })

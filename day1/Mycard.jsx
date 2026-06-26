@@ -22,3 +22,24 @@ function Mycard() {
 }
 
 export default Mycard;
+
+
+// function Aa() {
+//   const a = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//   }
+//   const bb = [a,b,c]
+
+//   return(
+//     <div>
+//       <h1>{a.a}</h1>
+//       <h1>a.b</h1>
+//       <ul>
+//         {bb.map(b => <li key={b}>{b}</li>)}
+//       </ul>
+
+//     </div>
+//   );
+// }
