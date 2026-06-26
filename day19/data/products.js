@@ -1,0 +1,83 @@
+// src/data/products.js
+export const products = [
+  {
+    id: 1,
+    name: "Laptop Pro",
+    price: 999,
+    category: "Electronics",
+    image: "https://picsum.photos/seed/laptop/400/400",
+    description: "Powerful laptop for professionals.",
+  },
+  {
+    id: 2,
+    name: "Wireless Mouse",
+    price: 29,
+    category: "Electronics",
+    image: "https://picsum.photos/seed/mouse/400/400",
+    description: "Ergonomic wireless mouse.",
+  },
+  {
+    id: 3,
+    name: "Mechanical Keyboard",
+    price: 129,
+    category: "Electronics",
+    image: "https://picsum.photos/seed/keyboard/400/400",
+    description: "RGB mechanical keyboard.",
+  },
+  {
+    id: 4,
+    name: "Cotton T-Shirt",
+    price: 19,
+    category: "Clothing",
+    image: "https://picsum.photos/seed/tshirt/400/400",
+    description: "Comfortable cotton t-shirt.",
+  },
+  {
+    id: 5,
+    name: "Denim Jeans",
+    price: 59,
+    category: "Clothing",
+    image: "https://picsum.photos/seed/jeans/400/400",
+    description: "Classic denim jeans.",
+  },
+  {
+    id: 6,
+    name: "Running Shoes",
+    price: 89,
+    category: "Clothing",
+    image: "https://picsum.photos/seed/shoes/400/400",
+    description: "Lightweight running shoes.",
+  },
+  {
+    id: 7,
+    name: "Coffee Maker",
+    price: 49,
+    category: "Home",
+    image: "https://picsum.photos/seed/coffee/400/400",
+    description: "Automatic drip coffee maker.",
+  },
+  {
+    id: 8,
+    name: "Desk Lamp",
+    price: 39,
+    category: "Home",
+    image: "https://picsum.photos/seed/lamp/400/400",
+    description: "LED desk lamp with adjustable brightness.",
+  },
+  {
+    id: 9,
+    name: "Backpack",
+    price: 45,
+    category: "Accessories",
+    image: "https://picsum.photos/seed/backpack/400/400",
+    description: "Durable everyday backpack.",
+  },
+];
+
+export const categories = [
+  "All",
+  "Electronics",
+  "Clothing",
+  "Home",
+  "Accessories",
+];
